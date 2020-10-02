@@ -1,4 +1,5 @@
 
+//Importing Google Keys
 const OAuth2Data = require('./googlekey.json')
 //Express app
 const express = require('express');
@@ -9,7 +10,6 @@ const nodemailer = require('nodemailer');
 
 //Google OAuth packages
 const { google } = require("googleapis");
-
 
 //Configuring server
 const port = 3000;
@@ -23,7 +23,6 @@ const CLIENT_ID = OAuth2Data.client.id;
 const CLIENT_SECRET = OAuth2Data.client.secret;
 const REDIRECT_URL = OAuth2Data.client.redirect
 var authenticated = false;
-
 var myTokens;
 
 
@@ -68,6 +67,7 @@ app.post('/api/sendemail', function (req, res) {
             subject: 'Here is test mail', // Subject
             html: '<p>You have received this email using Gmail Rest Api!! ;)</p>'//body
         }
+        //Sending Email
         transport.sendMail(mailOptions, function (err, result) {
             if (err) {
                 res.send({
@@ -108,4 +108,5 @@ app.get('/auth/gmail/callback', function (req, res) {
         });
     }
 });
+
 app.listen(port, () => console.log(`Gmail REST app listening on port ${port}!`))
