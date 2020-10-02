@@ -1,0 +1,15 @@
+{
+    "client": {
+        "id": "849729647668-7batmmauthnblojp1bb4bos21r1osblu.apps.googleusercontent.com",
+        "secret": "2C19ac56GHikydFYEn7xZxqX",
+        "redirect": "http://localhost:3000/auth/gmail/callback"
+    },
+
+
+    "credentials": {
+        "access_token": "your access_token",
+        "token_type": "Bearer",
+        "expires_in": 3600,
+        "refresh_token": "your refresh_token"
+    }
+}
