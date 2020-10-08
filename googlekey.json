@@ -1,7 +1,7 @@
 {
     "client": {
-        "id": "849729647668-7batmmauthnblojp1bb4bos21r1osblu.apps.googleusercontent.com",
-        "secret": "2C19ac56GHikydFYEn7xZxqX",
+        "id": "Your-Id",
+        "secret": "Your-secret",
         "redirect": "http://localhost:3000/auth/gmail/callback"
     },
 
